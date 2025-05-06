@@ -14,7 +14,7 @@ async def somar(num1: float = 0, num2: float = 0):
     if (res.err == ""):
         return res.num
     else:
-        return  res.num
+        return res.err
 
 @app.post("/calc")
 async def subtrair(num1: float = 0, num2: float = 0):
@@ -23,7 +23,7 @@ async def subtrair(num1: float = 0, num2: float = 0):
     if (res.err == ""):
         return res.num
     else:
-        return  res.num
+        return res.err
 
 @app.post("/calc")
 async def multiplicar(num1: float = 0, num2: float = 0):
@@ -32,7 +32,7 @@ async def multiplicar(num1: float = 0, num2: float = 0):
     if (res.err == ""):
         return res.num
     else:
-        return  res.num
+        return res.err
 
 @app.post("/calc")
 async def dividir(num1: float = 0, num2: float = 0):
@@ -41,7 +41,7 @@ async def dividir(num1: float = 0, num2: float = 0):
     if (res.err == ""):
         return res.num
     else:
-        return  res.num
+        return res.err
 
 @app.post("/calc")
 async def potencia(num1: float = 0, num2: float = 0):
@@ -50,7 +50,7 @@ async def potencia(num1: float = 0, num2: float = 0):
     if (res.err == ""):
         return res.num
     else:
-        return  res.num
+        return res.err
 
 @app.post("/calc")
 async def raiz(num1: float = 0, num2: float = 0):
@@ -59,4 +59,4 @@ async def raiz(num1: float = 0, num2: float = 0):
     if (res.err == ""):
         return res.num
     else:
-        return  res.num
+        return res.err
